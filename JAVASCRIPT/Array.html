@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let course=["React","Angular","Java","Python"];               
+    console.log(course);
+    console.log(`Arraylength:${course.length}`);
+    console.log(`ArraySize: ${course.length-1}`);
+    console.log(course[1]);
+    course[2]="Advanced JAVA"
+    console.log(course);
+    for(i=0;i<course.length;i++)
+    {
+        document.write(course[i],",");
+    }
+    document.write("<br>");
+    for(let c of course)
+    {
+        document.write(c,",");
+    }
+    document.write("<br>");
+    for(i in course)
+    {
+        document.write(i,",");
+    }
+
+    course.push("nodejs","express js");
+    course.pop();
+    document.write("<br>");
+    document.write(course);
+
+    course.unshift("Html","css");
+    course.shift();
+    document.write("<br>");
+    document.write(course);
+
+    course.splice(3,0,"Saas","TypeScript");//it will add two values from 3rd index
+    document.write("<br>");
+    document.write(course);
+
+    course.splice(4,2);///it will remove two values from 4th index
+    document.write("<br>");
+    document.write(course);
+
+    course.splice(2,1,"Wordpress","Digital Marketing");//it will remove one value from 2 index and  add two values
+    document.write("<br>");
+    document.write(course);
+
+    document.write("<br>");
+    console.log( course.toString());
+
+    document.write("<br>");
+    console.log(course.join(" "))
+    console.log(course.join("!!"))
+
+    
+
+
+    </script>
+    
+</body>
+</html>

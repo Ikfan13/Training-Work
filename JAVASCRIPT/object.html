@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person=
+        {
+            id:101,
+            name:"Veera",
+            contact:9999,
+            Single:true,
+            address:{
+                city:"Ramnad",
+                pin:623711,
+                State:"Tamilnadu"
+            },
+            details:function()
+        {
+           return `ID:${this.id} NAME:${this.name} Contact:${this.contact} Single:${this.Single}
+           Address:${this.address.city}`;
+        }
+            
+        }
+       
+         document.write(`ID:${person.id} NAME:${person.name} Contact:${person.contact} Single:${person.Single}`);
+        document.write("<br>");
+         document.write(`City:${person.address.city} Pin:${person.address.pin} State:${person.address.State}`);   
+         document.write("<br>");
+         document.write(person.details());
+
+         document.write("<br>");
+         person.name="Suresh M"
+         person.contact=9995544222;
+         document.write(`ID:${person.id} NAME:${person.name} Contact:${person.contact} Single:${person.Single}`);
+
+         document.write("<br>");
+
+         let emp=[
+            {id:1,name:"Suresh",salary:95000,gender:"male",address:"chennai"},
+            {id:2,name:"basil",salary:95000,gender:"male",address:"mumbai"},
+            {id:3,name:"madhav",salary:95000,gender:"male",address:"Nagpur"},
+            {id:4,name:"Ratan",salary:95000,gender:"male",address:"delhi"},
+            {id:5,name:"Rahul",salary:95000,gender:"male",address:"hyderabad"},
+            {id:6,name:"Raja",salary:95000,gender:"male",address:"Banglore"},
+         ];
+         for(let e of emp)
+         {
+            document.write(`ID:${e.id} Name:${e.name} Salary:${e.salary} Gender:${e.gender} Address:${e.address},<br>`);
+         }
+         
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+JavaScript:It is used to add functionality and behaviour into webapp.
+it is interpreted language
+it is loosely typed language
+
+There are two ways to use java script 
+1.Internal:In html we use script and in that script we write js code
+2.External:first we create a seperate js file and that js file we import in html file by using script tag;
+
+How to display output in js
+1.document.write(): it display outout on webpage.it display output in single line
+2.window.alert():it will generate one pop up window and display output in it.
+console.log():it will give output in browser console or terminal
+innerHtml(DOM);it allows us t insert data inside an element
+========================================================================
+
+In JavaScript window is global object
+By using DOM how to set get value from element
+how to apply style rule to an element by using DOM
+
+function:
+it is a block of code which is used to perform specific task
+it will execute only when we call it otherwise not
+
+There are two types of function:
+1.predefined function: provided by Java script
+2.user-define function:created by users
+
+anonymous function:Function with no name is called anonymous function
+
+arrow function:function with no name,function with no keyword is called arrow function with arrow symbol(=>) after paranthesis
+
+S.optional paramaterize function:when parameter is optional parameterize function.it always write at last with default value in paranthesis
+
+rest-parameterize function:when we dont know how many parameter are required in function in that case we use it.in that case we use it.In this We use spread operator(...)
+=====================================================================================================
+DataTypes:
+                                                       ______
+1.number data type                                          |
+let num1=1235,num1=0.564,num2=2567854                       |
+                                                            |
+2.String Data Type:                                         |
+                                                            |
+let myname="Mohamed Ikfan" address="Somewhere from Galaxy"  |
+                                                            |
+3.boolean data Type:                                        |
+                                                            |    Primitive Data Type
+ let cond1=true, cond2=false;                               |
+                                                            |
+4.undefine data type:                                       |
+ let mydata;                                                |
+                                                            |
+5.null dataType:          let n=null;                       |           |
+                                                            |
+ let futuredata=null;                                       |
+ console.log(fututeData);                                   |
+                                                         ___|
+
+                                                        ______
+6. Array dataType                                             |
+let course=["React","Angular","Java","Python"];               |
+console.log(course);                                          |
+                                                              |  Non Primitive Data Type
+7.object data type:                                           |
+let emp={id:101,name:"Suresh",salary:20000}                   |
+                                                        ______|
+
+Arrays:
+      it is used to store multiple data values with same data type in single variable
+      IN array values are stored on basis of index
+      array index always start from 0
+      array denoted by [] bracket
+
+      array.length:total number of array values in it
+      arraysize:number of index
+         length-1
+
+    for loop:
+
+
+
+    for of:
+             it returns array values
+    for in:
+            it returns array indexs
+++++++++++==========================+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Array Methods:
+push():it allows us to insert data at last index of array
+
+pull():it is used to remove from last index of an array
+
+unshift:it allow us to insert value in starting index of an array
+
+shift:it allow us to remove value in starting index of an array
+
+splice(startindex,deleteCount,datatoInsert):it allow us to add and remove value from middle of an array
+
+toString:it will convert arraydata to String.
+
+join:it convert array data into string data,it takes one parameter to seperate data 
+
+
+=====================================================================================================
+
+Object data type:
+           -it is used to store multiple values with different datatype in single variable.
+           -in object data store in key value pairs format
+           -we can access object data outside for that we write object.keyname.
+           -object denoted by {}
+

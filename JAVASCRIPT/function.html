@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greeting()
+        {
+            return "Good Morning Frndss"
+        }
+        document.write(greeting(),"<br>");
+        console.log(greeting());
+        let greet=greeting();
+        document.write(greet,"<br>")
+
+        function welcome(std1)
+        {
+            return  "welcome you "+std1;
+        }
+        document.write(welcome("I"),"<br>")
+        document.write(welcome("K"),"<br>")
+        document.write(welcome("F"),"<br>")
+        document.write(welcome("A"),"<br>")
+        document.write(welcome("N"),"<br>")
+
+        function welcome(std1,std2,std3)
+        {
+            return  `welcome you all ${std1} ${std2} ${std3}`;
+        }
+        document.write(welcome("I","K","F"),"<br>")
+
+        //Anonymous function:
+        let add=function(num1,num2)
+        {
+            return num1+num2;
+        }
+        document.write(add(200,500),"<br>");
+
+        //Arrow Function
+        let sub=()=>{
+            return 500-100;
+        }
+        document.write(sub(),"<br>")
+
+        let sub1=(num1,num2)=>num1-num2;
+
+        document.write(sub1(200,100),"<br>")
+
+        //S-optional parameterize function
+        let fullname=(fname,lname,mname="",address="")=>
+        {
+            return `${fname} ${lname} ${mname} ${address}`;
+        }
+        document.write(fullname("Mohamed Ikfan","M"),"<br>")
+        document.write(fullname("Mohamed","M","Ikfan"),"<br>")
+        document.write(fullname("Mohamed","M","Ikfan","Somewhere from Galaxy"),"<br>")
+
+        let emplist=(...std)=>
+        {
+            return std;
+        }
+        document.write(empList("NaiSekar","Kaipulla","theepori thirumugam","Style Pandi","Snake Babu",""))
+    </script>
+</body>
+</html>
