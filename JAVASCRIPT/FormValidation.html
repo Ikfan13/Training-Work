@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="formvalidation.js"></script>
+    <style>
+        form{
+            border: solid 3px cadetblue;
+            width: 500px;
+
+    
+    margin: auto;
+        }
+    label{
+        font-size: 30px;
+        color: crimson;
+    }
+    input text
+    {
+        width: 200px;
+        height: 30px;
+    }
+    </style>
+    
+</head>
+<body>
+    <form action="" onsubmit="checkAll()">
+        <div>
+        <label for="fname">Enter Your Firstname:</label>
+        <input type="text" name="fname" id="fname"><br>
+        </div>
+        <div>
+            <label>Select Qualification:</label><br>
+            <input type="checkbox" name="edu" value="ssc">SSC
+            <input type="checkbox" name="edu" value="hsc">HSC
+            <input type="checkbox" name="edu" value="ug">UG
+            <input type="checkbox" name="edu" value="pg">PG
+            <input type="checkbox" name="edu" value="master">Master
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
