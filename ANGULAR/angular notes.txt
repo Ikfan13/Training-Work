@@ -1,0 +1,97 @@
+node -v
+npm -v
+tsc -v or npx tsc -v
+
+
+//to install angular
+npm i -g @angular/cli
+
+//it will show angular version
+ng v
+//create angular project
+step1:ng new --no-standalone projectname
+step2:cd projectname-
+step3:code .
+step4:npm serve -o //this will start angular project in development mode and display outputon browser on local host:4200
+
+
+*Angular:
+It is application designing and development platform for creating efficient and sofisticated single page application
+Angular work on component and modules
+
+*Component:
+ it id partial part of angular applicationit can be any part of application that can reuse multiple times.
+
+
+*node_module:
+    All Library or dependency will install on this folder
+
+*package.json:
+    it will keep entry of downloaded or install library or package.
+
+*package-lock.json:it will hold detail information or install library
+
+*README.md=it will work like guide manual
+
+*gitignore:it is use to store file and folder name to ignorewhile  push data on github
+
+note:IN Angular app is root component
+
+
+How to create component:
+
+ng generate component componentName
+
+ng g c componentName
+
+ng g c databinding
+
+
+
+how to display individual component view or output
+               copy component selector name from its ts file and write selector name as tag where you want 
+
+
+DataBinding:access data from one file to another in same component
+
+1.interpolation {()}- 
+2.property Binding []-
+3.event Binding ()-
+4.Two way data Binding [()]-
+
+
+
+
+
+
+*Directives:it is used to perform dom manipulation and change appearance and behaviour  of dom.
+
+Structural Directives :it is used to change dom elemnt layout.
+                       it is denoted by * symbol
+                       *ngIf;it will display dom element when it get truevalue otherwise not
+                       *ngfor;it is use to iterate or replace dom element
+                       *ngSwitchCase;it is used to display dom element on choice
+                                                              
+
+attribute directive:it is use to change apperatnce and behaviour on choice   
+                       *ngStyle:it is used to apply css propeties conditionally
+                       ngClass:it is used to apply css classes conditionally.
+
+custom directive:developer can write logic to create custom directive 
+                 to create  custom directie we have command
+                 ng generate directive directiveName
+
+
+
+
+*Pipe:In Angular pipe is use to transform property without changing its original value;
+      to use pipe we use|symbol
+      there are three types of pipe:
+
+      1.Inbuilt Pipe:
+      2.Custom pipe:pipe developed by developer for use in project
+      3.third party pipe:pipe developed by third party vender
+ 
+create  component with name mypipe
+
+ng g c component/mypipe
