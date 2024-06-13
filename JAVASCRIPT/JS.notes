@@ -165,15 +165,23 @@ String Method:
 
 
 how to find index of searching string:
-1.indexOf("Search-string",index)
-                    it will return index first occurences of searching string
-                    it will search string from left origin
+1.indexOf("search-String",index?): 
+ -it will return index of first occurenses of search string.
+ -it will search string from left to right direction.
+ -if searching is not found then it return -1 result.
 
-2.lastindex of
+2.lastIndexOf("search-String",index?):
+ -it will return index of first occurenses of search string.
+ -it will search string from right to left direction.
+ -if searching is not found then it return -1 result.
 
-3.search
+3.search("search-String"):
+ -it will return index of first occurenses of search string.
+ -it will search string from left to right direction.
+ -if searching is not found then it return -1 result.
+ -it is faster than indexOf method.
 
-how to fimd part of string from big String:
+how to find part of string from big String:
 
     slice(star-index,end-index):
          it will return partial part of string from index number;
@@ -223,5 +231,19 @@ It will generate one pop up window and allow user to insert data in it
 
 Form Validation:
 
+*perform form validation after submitting form 
+-for this we use onsubmit event 
 
+Task1:- perform validation for lname,password,email,contact,gender
+*perform form validation before submitting form 
+-for this we use onblur event 
+Task1:- perform validation for password,
+============================================================================================================
 
+How to merge two arrays:
+
+1.concat method-
+2.spread operator-
+
+Destructuring:creating constant variable and storing data on it;
+we can destruct array and object data;

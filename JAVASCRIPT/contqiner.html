@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Container</title>
+<style>
+    .container {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<button onclick="showContainer('container1')">Container 1</button>
+<button onclick="showContainer('container2')">Container 2</button>
+<button onclick="showContainer('container3')">Container 3</button>
+
+<div id="container1" class="container">
+    <!-- Content of container 1 -->
+    <h2>Container 1</h2>
+</div>
+
+<div id="container2" class="container">
+    <!-- Content of container 2 -->
+    <h2>Container 2</h2>
+</div>
+
+<div id="container3" class="container">
+    <!-- Content of container 3 -->
+    <h2>Container 3</h2>
+</div>
+
+<script>
+    function showContainer(containerId) {
+        // Hide all containers
+        var containers = document.getElementsByClassName('container');
+        for (var i = 0; i < containers.length; i++) {
+            containers[i].classList.remove('active');
+        }
+
+        // Show the selected container
+        var container = document.getElementById(containerId);
+        if (container) {
+            container.classList.add('active');
+        }
+    }
+</script>
+
+</body>
+</html>

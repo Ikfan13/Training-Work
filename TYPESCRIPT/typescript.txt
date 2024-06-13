@@ -1,0 +1,90 @@
+12/6/24
+
+
+*Typescript: it is superset of javascript.
+            -it is compile language.
+            -it is strict type language.
+
+*software pre-requist
+1. nodejs 
+    node -v // it will show node version.
+    npm -v // it will show npm version.
+
+2.Typescript 
+  npm i typescript -g // it will install typescript
+  tsc -v // it will display Typescript version.
+
+*we can create typescript file by writting fileName.ts 
+*How to execute typescript file 
+step1: tsc fileName.ts  // it will compile ts file and generate plain js file 
+step2: node fileName.js // it will execute js file 
+
+
+*how to create variable in typescript 
+syntax: let  variableName:datatype;
+
+*data type in Typescript 
+
+*write a function with three  parameter fname,mname and lname and display fullname 
+
+*oops 
+1. Class:-it is collection of data-member and member-function.
+         -it is template which we can reuse.
+         -to class class we use class keyword.
+         -class name must start with capital letter.
+   syntax: class Classname{
+      data-member and member-function
+   }
+
+ -this: it represt current or current object.
+
+2. Object: - it is an instance of class.
+           -by using object we can access class data-member and member-function outside class.
+           syntax:  let objName = new Classname();
+
+
+ -constructor : -it is special member function of class.
+                -constructor execute automaticaaly when class object is created or initialize.
+                -constructor name must be only constructor in typescript.
+
+
+3. Inheritance: accessing parent class property into child class.
+               to perform inheritance inbetween two class we use "extends" keyword.
+         syntax:  class childClassName extends parentClassName.
+
+     -super(): -it represent parent class constructor in child class.
+
+4. Encapsulation: warapping of data into single Unit.
+5. Abstraction: hidding implementation and showing only functionality.
+               -we can achieve by using interface and Abstraction method,static keyword.
+
+    access specifier: 
+    publick: we can access class property inside same class,outside class and in child class also
+    protected:we can access class property inside same class, in child class but not outside class
+    private: we can access class property within same class.
+
+6. pollymosphism: ability to take more than one form.
+   -method overloading : in this when we have multiple method with same in same class
+   -method overrind : in this when we have multiple method with same name in different classes
+
+*module in type: 
+it can be collection of single or multiple typescript file,containig code with specific purpose.
+-that data or code we can access in another file by exporting and importing.
+- we use export keyword to send data from file.
+- we use importing keyword to access data. 
+
+
+*Interface : it is signature of class. 
+            -it contain abstract method in it.
+            -we create interface by using interface.
+            -its child class has responsibility to implement interface.
+            -to perform inheritance in between class and interface we use "implements" keyword
+
+
+
+
+
+
+
+
+
