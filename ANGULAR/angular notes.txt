@@ -95,3 +95,34 @@ custom directive:developer can write logic to create custom directive
 create  component with name mypipe
 
 ng g c component/mypipe
+
+
+*Routing:Navigation of Component 
+        display component output or view by writting its path in browser url
+        -Routing will display component output under <router-outlet-directory>
+        In angular root routing module name is app-routing-module.ts
+
+
+types of routing:
+ 
+ 1>Naming Routing-
+                   we write component routing path in browser url to display component output
+ 
+ 2>Default Routing-
+                   display component output by default means,keep its path value blanck in routing
+                   try to keep default routing in first order
+ 3>Redirect Routing-
+                  display component output by writing diffrent path name
+ 
+ 4>Parameterize Routing-
+ 
+ 
+ 5>Child Routing-define one routing inside another routing 
+                 for this in parent routing we have to use children property
+                 in parent routing component html file we must write <router-outlet><router-outlet>
+ 
+ 
+ 6>Wildcard Routing-
+                     display component output,when user write wrong path is browsr url.
+                     in this we write "as value in routing  path 
+                     wildcard routing must last routing,router define below to it never work.

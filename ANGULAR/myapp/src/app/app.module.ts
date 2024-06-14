@@ -11,6 +11,15 @@ import { CubePipe } from './shared/custompipe/cube.pipe';
 import { AreaofsquarePipe } from './shared/custompipe/areaofsquare.pipe';
 import { AreaofcirclePipe } from './shared/custompipe/areaofcircle.pipe';
 import { EmpdetailsComponent } from './components/empdetails/empdetails.component';
+import { ToggleimageComponent } from './components/toggleimage/toggleimage.component';
+import { VehiclelistComponent } from './components/vehiclelist/vehiclelist.component';
+import { AngFormComponent } from './components/ang-form/ang-form.component';
+import { RtfComponent } from './components/rtf/rtf.component';
+import { UtdfComponent } from './components/utdf/utdf.component';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { MainDashboardComponent } from './components/main-dashboard/main-dashboard.component';
+import { NavComponent } from './components/nav/nav.component';
+import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +29,16 @@ import { EmpdetailsComponent } from './components/empdetails/empdetails.componen
     CubePipe,
     AreaofsquarePipe,
     AreaofcirclePipe,
-    EmpdetailsComponent
+    EmpdetailsComponent,
+    ToggleimageComponent,
+    VehiclelistComponent,
+    AngFormComponent,
+    RtfComponent,
+    UtdfComponent,
+    PagenotfoundComponent,
+    MainDashboardComponent,
+    NavComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
