@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DatabindingComponent } from './components/databinding/databinding.component';
 import { DirectiveComponent } from './components/directive/directive.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { MypipeComponent } from './components/mypipe/mypipe.component';
 import { CubePipe } from './shared/custompipe/cube.pipe';
 import { AreaofsquarePipe } from './shared/custompipe/areaofsquare.pipe';
@@ -20,6 +20,8 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
 import { MainDashboardComponent } from './components/main-dashboard/main-dashboard.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BreakfastComponent } from './components/breakfast/breakfast.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,12 +40,15 @@ import { FooterComponent } from './components/footer/footer.component';
     PagenotfoundComponent,
     MainDashboardComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    BreakfastComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
     
   ],
   providers: [

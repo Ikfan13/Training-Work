@@ -9,12 +9,15 @@ import { AngFormComponent } from './components/ang-form/ang-form.component';
 import { RtfComponent } from './components/rtf/rtf.component';
 import { UtdfComponent } from './components/utdf/utdf.component';
 import { MainDashboardComponent } from './components/main-dashboard/main-dashboard.component';
+import path from 'path';
+import { BreakfastComponent } from './components/breakfast/breakfast.component';
 
 const routes: Routes = [{path:"MainDashBoard",component:MainDashboardComponent,children:[{path:"databinding",component:DatabindingComponent},
   {
     path:"directive"
     ,component:DirectiveComponent
   },
+  {path:"breakfast",component:BreakfastComponent},
   // {path:"",component:ToggleimageComponent},
   //{
     // path:"",

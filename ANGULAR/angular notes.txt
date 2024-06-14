@@ -126,3 +126,55 @@ types of routing:
                      display component output,when user write wrong path is browsr url.
                      in this we write "as value in routing  path 
                      wildcard routing must last routing,router define below to it never work.
+
+Form Validation in angular:
+
+*In angular there are two ways to perform form validation.
+
+1.By using UTDF(User template Driven Form)-
+                when we have  to perform simple and small form validation in that case we use  UTDF
+                In utdf validation code will in html file.
+                In this we use ngModel model directory.
+2.by Using RTF(Reactive Template Form):
+                when we have write complex logic to perform form validation in that case we use RTF
+                In  rtf validation perform in its file
+                to rtf validation first we have to import Reactive form module in root module.
+                In rtf form validation we use two classes.
+                1.FormGroup:it will hold call FormControl data in it as well as it tract status of form .
+                2.FormControl:It will track status and validation of individual input control.
+
+
+
+step1:import ReactiveFormsModule in root module(app.module.ts) from ReactiveFormsModule
+step2:import Formgroup and FormControl class in rtf component
+
+password:new FormControl())}"",Validators.required,Validators.pattern("^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+
+
+service:In angular service is special class with extra power
+        We can share data with multiple component
+        we can implement business logic in it
+        we can perform external communication (fetch data from server)
+
+        to create service 
+        npx ng g service servicename
+
+how to access service data  into any component:
+
+    to acce3ss dsta from service to component for that in component constructor we have to create instance of service class then we can access service data into component
+
+    create service class instance in component constructor is called dependency injection
+
+    *How to create REST fake API:
+
+    dummy server:json-server
+    npm i -g json-server
+    database:json database
+    npm i -g json-server
+
+    How to upload db.json file on json-server
+    cd src/app/shared/datatbase(press enter)
+    json-server --watch -p 8888 db.json(press enter)
+
+    to make request from service to server we have to create instance of HttpClient class in service.but
+    HttpClient is not a part of core angular.it is a part of HttpClientModule for this part first we have to import HttpClientModule in our root module
