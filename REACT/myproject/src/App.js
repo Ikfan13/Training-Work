@@ -7,6 +7,11 @@ import MethodEvent from './Components/MethodEvent';
 import SetStateComponent from './Components/SetStateComp';
 import ConditionRenComp from './Components/ConditionRenComp';
 import MyImagesComp from './Components/MyImagesComp';
+import ParentComp from './Components/ParentComp';
+import MyCssComp from './Components/MyCssComp';
+import ClickCounterComp from './Components/ClickCounterComp';
+import HoverCounterComp from './Components/HoverCounterComp';
+import { MySliderComp } from './Components/MySliderComp';
 function App() {
   return (
     <div className="App">
@@ -31,8 +36,13 @@ function App() {
       <MyDetails Fname="Itadori" Lname="Yuji" Email="ItadoriYuji11@gmail.com" Contact="564738284585"></MyDetails>
        <MethodEvent></MethodEvent>  
        <SetStateComponent></SetStateComponent>  */}
-       <ConditionRenComp></ConditionRenComp>
-       <MyImagesComp></MyImagesComp>
+       {/* <ConditionRenComp></ConditionRenComp>
+       <MyImagesComp></MyImagesComp> */}
+       {/* <ParentComp></ParentComp> */}
+       <MyCssComp></MyCssComp>
+       <ClickCounterComp></ClickCounterComp>
+       <HoverCounterComp></HoverCounterComp>
+       <MySliderComp></MySliderComp>
     </div>
   );
 }
