@@ -11,6 +11,7 @@ import { UtdfComponent } from './components/utdf/utdf.component';
 import { MainDashboardComponent } from './components/main-dashboard/main-dashboard.component';
 import path from 'path';
 import { BreakfastComponent } from './components/breakfast/breakfast.component';
+import { VehiclelistComponent } from './components/vehiclelist/vehiclelist.component';
 
 const routes: Routes = [{path:"MainDashBoard",component:MainDashboardComponent,children:[{path:"databinding",component:DatabindingComponent},
   {
@@ -18,7 +19,8 @@ const routes: Routes = [{path:"MainDashBoard",component:MainDashboardComponent,c
     ,component:DirectiveComponent
   },
   {path:"breakfast",component:BreakfastComponent},
-  // {path:"",component:ToggleimageComponent},
+  {path:"toggleimg",component:ToggleimageComponent},
+  {path:"vehiclelist",component:VehiclelistComponent},
   //{
     // path:"",
     // redirectTo:"directive"

@@ -18,9 +18,20 @@
     <div *ngIf="userform.get('Pass').errors.pattern">Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character</div>
 </div>
 
-<div class="form-group">
-     <label for="" class="form-check-label">
-        <input type="checkbox" name="term" formControlName="term">
-     </label>
-</div>
+<label class="form-label">Enter Email:</label>
+   <input type="text" name="email" formControlName="email" class="form-control">
+   <div class="alert alert-danger" *ngIf="userform.get('email').touched && userform.get('email').invalid">
+    <div *ngIf="userform.get('email').errors.required">This field is required</div>
+    <div *ngIf="userform.get('email').errors.pattern">Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character</div>
+   </div>
+
+   <div class="form-group">
+    <label for="" class="form-check-label">
+        <input type="checkbox" name="term" formControlname="term">Accept Terms and Condition.
+    </label>
+    <div class="alert alert-danger" *ngIf="userform.get('term').touched && userform.get('term').invalid">
+        <div *ngIf="userform.get('email')"></div>
+    </div>
+    <button type="submit">Submit</button>
+   </div>
 </form>

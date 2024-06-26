@@ -1,0 +1,183 @@
+ create table tasks
+ (
+     id int primary key,
+     title varchar(255)unique not null,
+     start_date Date,
+     due_date Date
+ );
+
+
+
+
+create table checklist(
+id int,
+task_id int,
+title varchar(255) not null,
+is_completed boolean not null Default False,
+primary key(id,task_id),
+foreign key(task_id)
+references tasks(id)
+
+on update restrict
+on delete cascade
+);
+
+create table subscribers
+(
+  email varchar(200) not null unique
+);  
+
+alter table subscribers 
+add id int auto_increment primary key;
+
+alter table subscribers 
+add phone int ;
+
+alter table subscribers 
+drop phone int ;
+
+
+alter table subscribers 
+rename column id to s_id;
+
+rename table subscribers to sub;
+
+1.
+create table movies
+(
+    movie_id int,
+	movie_name varchar(255),
+	movie_rating decimal(3,1),
+	primary key(movie_id,movie_name)
+);
+2.
+create table company
+(
+    company_id int primary key,
+	trader varchar(255) not null,
+	number_of_employees int not null default 0
+);
+
+
+3.
+create table job_offer
+(
+ offer_id int primary key,
+ offer_title varchar(255),
+ offer_min_salary int default 5000,
+ offer_max_salary int default null,
+ company_id int,
+ foreign key(company_id) references company(company_id)
+);
+
+4.rename table movies to movies_rename
+
+5.alter table movies_renamed
+  add movie_director varchar(255);
+  
+6.alter table movies_renamed
+  add ID int first;  
+  
+7.alter table movies_renamed
+  add movies_description varchar(255) after movie_name;
+
+8.ALTER TABLE movies_renamed
+  modify column movie_rating INT;
+  
+  
+9.alter table movies_renamed
+  drop column movie_director;
+  
+  
+10.alter table movies_renamed
+  drop  primary key;
+  
+11.alter table movies_renamed
+ add primary key(movie_id,movie_name);  
+ 
+12.
+
+
+
+
+
+
+Assignment-2
+
+
+
+1.select department_id,sum(salary) from employee group by department_id;
+
+2.select department_id,sum(salary)'total_salary' from employee group by department_id order by total_salary desc ;
+
+3.select department_id,max(salary)'max_salary' from employee group by department_id order by max_salary;
+
+4.select department_id,min(salary)'min_salary' from employee group by department_id order by min_salary;
+
+5.select department_id,sum(salary) totalSalary from employeegroup by department_id having sum(salary)>8000000 order by sum(salary) desc; 
+
+6. select first_name,last_name,job_id from employee where first_name like 's%';
+
+7.select employee_id,concat(first_name," ",last_name),max(salary) from employee group by employee_id limit 1;
+
+8.select employee_id,concat(first_name," ",last_name),max(salary) from employee group by employee_id limit 1,1;
+
+9.select year(hire_date),count(*) from employee group by year(hire_date);
+
+10.select employee_id,first_name,last_name from employee where first_name like '%an%';
+
+11.select * from employee where month(hire_date) = 8 and year(hire_date) = 1994;
+
+12.select employee_id,concat(first_name," ",last_name),min(salary) from employee group by employee_id order by min(salary) asc limit 5;
+
+13.select employee_id,first_name,last_name from employee where year(hire_date) between 1980 and 1989;
+
+14.select employee_id,first_name,last_name from employee where day(hire_date) between 16 and 31;
+
+15.select count(*) from employee where commission_pct is null;
+
+16.select employee_id,salary+ifnull(commission_pct,0) 'total_salary' from employee;
+
+
+Joins:
+
+
+1.select concat(e.first_name," ",e.last_name) EmployeeName,e.salary,
+   concat(m.first_name," ",m.last_name)Manager,m.salary 
+   from employee e left join employee m 
+   on e.manager_id = m.employee_id order by manager;
+
+2. select concat(m.first_name," ",m.last_name)Manager,
+      count(e.first_name)
+      from employee e inner join employee m 
+      on e.manager_id = m.employee_id 
+      group by Manager order by manager desc;
+
+3.select department_id,department_name,count(first_name) from departments left join employee using(department_id) group by department_id;
+
+4.select concat(first_name," ",last_name)Employee,salary from employee where salary>(select avg(salary) from employee);
+
+5.select department_id,department_name,max(salary) from departments left join employee using(department_id) group by department_id order by max(salary) desc;
+
+6.select concat(e.first_name," ",e.last_name) EmployeeName,
+   concat(m.first_name," ",m.last_name)Manager,d.department_name 
+   from employee e left join employee m 
+   on e.manager_id = m.employee_id left join departments d on e.department_id=d.department_id order by d.department_name; 
+
+
+
+
+select customername,sales,customergroup from(
+select customernumber,
+round(sum(quantityordered*priceeach)) sales,
+(case
+when sum(quantityordered*priceeach)<10000 then
+'Silver'
+when sum(quantityordered*priceeach) between 10000 and 100000 then 'Gold'
+when sum(quantityordered*priceeach)>100000 then 'Platinum'
+end) Customergroup
+from
+orderdetails inner join orders using(ordernumber)
+where year(shippeddate)=2003
+group by customernumber
+limit 20) top20customers2003 inner join customers using(customernumber);

@@ -1,0 +1,63 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "pname": "Mouse",
+      "price": 56000,
+      "company": "Hp"
+    },
+    {
+      "id": "2",
+      "pname": "Keyboard",
+      "price": 3000,
+      "company": "Changepond"
+    },
+    {
+      "id": "3",
+      "pname": "Laptop",
+      "price": 79000,
+      "company": "Amazon"
+    },
+    {
+      "id": "4",
+      "pname": "Monitor",
+      "price": 88000,
+      "company": "TCS"
+    },
+    {
+      "id": "5",
+      "pname": "GraphicsCard",
+      "price": 45000,
+      "company": "HCL"
+    },
+    {
+      "id": "6",
+      "pname": "EternetCable",
+      "price": 10000,
+      "company": "HCL"
+    },
+    {
+      "id": "ecaf",
+      "pname": "GPU",
+      "price": "20000",
+      "company": "Nvidia"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "userid": "admin@gmail.com",
+      "userPass": "lol"
+    },
+    {
+      "id": "2",
+      "userid": "veera@gmail.com",
+      "userPass": "lol"
+    },
+    {
+      "id": "3",
+      "userid": "villu@gmail.com",
+      "userPass": "lol"
+    }
+  ]
+}

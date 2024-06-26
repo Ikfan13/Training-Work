@@ -1,0 +1,602 @@
+show databases - it list downs the database list
+create database cdb - It will create the database with 
+the  name "cdb"
+drop database cdb - It will drop the database with the name "cdb"
+system cls - to clear the screen
+use cdb - It will select the database with the name "cdb"
+
+create table tasks (
+id int auto_increment primary key ,
+title varchar(255) unique not null,
+start_date Date,
+due_date Date
+);
+
+show tables - it will show the list of tables in the selected database
+
+create table checklist(
+id int auto_increment,
+task_id int,
+title varchar(255) not null,
+is_completed boolean not null Default False,
+primary key(id,task_id),
+foreign key(task_id)
+references tasks(id)
+on update restrict
+
+desc tasks - will show the structure of the tasks table
+
+alter table tasks
+modify id int AUTO_INCREMENT ;
+
+create table subscribers(
+email varchar(300) not null unique);
+
+alter table subscribers
+add id int auto_increment primary key;
+
+alter table subscribers
+add phone int ;
+
+alter table subscribers
+drop column phone;
+
+alter table subscribers
+rename column id to s_id;
+
+Rename table subscribers to sub;
+
+drop table sub;
+
+drop table if exists tasks
+
+
+
+create table tasks (
+task_id int auto_increment primary key ,
+title varchar(255) not null,
+start_date Date,
+due_date Date,
+priority tinyint not null default 3,
+description text
+);
+
+insert into tasks (title,priority) values 
+('Learn MySQL Insert Statement', 1);
+
+insert into tasks values (2,'Insert Statement without Column ','2024-06-01','2024-06-02',2,'The sequence should be maintained whenever we are using the insert \n without specifying the column names');
+
+insert into tasks 
+(title, start_date,due_date)
+values
+("Insert with default value of priority",
+'2024-06-24', '2024-06-25');
+
+insert into tasks 
+(title, start_date,due_date)
+values
+("Insert using current_date in the tasks",
+current_date()-20,current_date() );
+
+insert into tasks (title,priority)
+values
+('do prestudy', 1),
+('do requirement gathering', 1),
+('prepare srs ', 2),
+('signoff requirements', 3);
+
+
+- find the structure of the table employees
+desc employees
+
+-Display all columns and all rows data for the table employees
+Select * from employees;
+
+- Display only firstname and lastname of employees
+select firstname,lastname from employees
+
+- Display fullname for the employee with alias Fullname
+select 
+concat(firstname," " ,lastname) as Fullname
+from  employees;
+
+- display current date and time 
+select now() datetime
+
+- display current date only
+select current_date() date
+
+- display current logged in user
+select current_user()
+
+-Display offices in the ascending order of cities
+select officecode,city,phone from offices order by city
+
+-Display offices in the descending order of cities
+select officecode,city,phone from offices order by city desc
+
+- display offices in the descending order of country and ascending order of city
+select city,country,phone,officecode from offices order by country desc , city asc;
+
+- display first 10 records from the orderdetails table
+select ordernumber, quantityordered, priceeach from orderdetails limit 10;
+
+
+- Display first 10 orders based on the total price in ascending order
+select ordernumber, quantityordered, priceeach
+, priceeach * quantityordered "totalprice"
+from orderdetails 
+order by priceeach * quantityordered
+limit 10;
+
+
+- Display first 10 orders based on the total price in descending order
+select ordernumber, quantityordered, priceeach
+, priceeach * quantityordered "totalprice"
+from orderdetails 
+order by priceeach * quantityordered desc
+limit 10;
+
+- Display distinct status from orders table
+select distinct status from orders;
+
+select ordernumber,status from orders
+order by field(
+status,
+'On Hold',
+'In Process',
+'Cancelled',
+'Resolved',
+'Disputed',
+'Shipped'
+) 
+limit 20
+
+-filtering can be acheived in rdbms using where clause
+
+- Display orders which are in process status
+select * from orders where status = 'In Process'
+
+- display all the employees who has job title sales rep
+select firstname,lastname,jobtitle
+from employees
+where jobtitle = 'Sales Rep'
+
+-Display all employees which have a jobtitle as 
+president or vp sales
+
+select firstname , lastname, jobtitle,reportsto
+from employees
+where jobtitle in ('President', 'VP Sales','Sales Rep')
+and 
+(reportsto != 1143 or reportsto is null)
+
+
+select firstname , lastname, jobtitle,reportsto
+from employees
+where jobtitle in ('President', 'VP Sales','Sales Rep')
+and reportsto is null
+
+
+select firstname , lastname, jobtitle,reportsto
+from employees
+where jobtitle not in ('President', 'VP Sales','Sales Rep')
+and reportsto is not null
+
+-Display all the products whose productname starts with the word America
+select productname from products 
+where productname like 'America%'
+
+-Display all the employees whose firstname starts with letter M and ends with letter N
+select firstname, lastname from employees 
+where firstname like 'M%N'
+
+-Display all the employees whose third letter is r
+
+select firstname, lastname from employees 
+where firstname like '__r%'
+
+select firstname, lastname from employees 
+where firstname like '__rr%'
+
+select firstname, lastname from employees 
+where firstname like '__r_r%'
+
+select firstname, lastname from employees 
+where firstname like '%r__d'
+
+select firstname, lastname from employees 
+where firstname like '____y'
+
+select firstname, lastname from employees 
+where firstname not like '____y'
+
+select productname,productcode from products where productcode like '%\_20%';
+
+select ordernumber, orderdate from orders
+where 
+orderdate >= '2003-01-01'
+and
+orderdate <= '2003-03-03'
+
+select ordernumber, orderdate from orders
+where 
+orderdate 
+between '2003-01-01' and '2003-03-03'
+
+select productcode, productname, buyprice
+from products
+where  
+buyprice between 90 and 100
+
+select productcode, productname, buyprice
+from products
+where  
+buyprice not between 90 and 100
+
+select ordernumber,  requireddate,status from orders
+where status in ('Shipped','In Process')
+and 
+requireddate between '2003-01-01' and '2003-03-03'
+
+-Find the top 5 customers based on there creditlimit
+select customername, creditlimit from customers
+order by creditlimit desc
+limit 5
+
+select customername, creditlimit from customers
+order by creditlimit desc
+limit 1
+
+same as below 
+
+select customername, creditlimit from customers
+order by creditlimit desc
+limit 0(position of row), 1(row_count from position)
+
+select customername, city from customers order by city desc limit 6,5;
+
+
+select count(*) from  customers
+
+select 
+productcode,priceeach, max(quantityordered) MQuanity,
+min(quantityordered) MinQuantity,
+avg(quantityordered) AQuantity,
+count(productcode) Total_Count
+from orderdetails 
+where priceeach > 100
+group by productcode,priceeach
+having count(productcode) > 4
+order by productcode desc
+limit 10
+
+select count(reportsto) from employees;
+ 
+select count(distinct jobtitle) from employees;
+ 
+select productcode, productname,textDescription
+from products p
+inner join productlines pl
+on p.productline = pl.productline
+
+select productcode, productname,textDescription
+from products 
+inner join productlines using (productline)
+
+select employee_id,first_name, last_name,department_name
+from departments d 
+inner join employee e 
+on d.department_id = e.department_id
+ 
+select o1.ordernumber, o1.status,
+sum(quantityordered*priceeach) total
+from orders o1
+inner join orderdetails o2
+on o1.ordernumber = o2.ordernumber
+group by o1.ordernumber
+
+
+select ordernumber,
+orderdate,
+productname,
+customername,
+quantityordered,
+priceeach
+from orders
+inner join orderdetails using(orderNumber)
+inner join products using (productcode)
+inner join customers using (customernumber)
+where  customername like 'A%'
+and quantityordered > 50
+
+
+select c.customernumber, customername, ordernumber, status
+from customers c
+left join orders o
+on c.customernumber = o.customernumber
+where orderNumber is null
+order by orderNumber desc
+
+
+select c.customernumber, customername, ordernumber, status
+from customers c
+left join orders o
+on c.customernumber = o.customernumber
+where ordernumber = 10123
+
+
+select c.customernumber, customername, ordernumber, status
+from customers c
+left join orders o
+on c.customernumber = o.customernumber
+and ordernumber = 10123 
+
+
+select c.customernumber, customername, ordernumber, status
+from customers c
+left join orders o
+on c.customernumber = o.customernumber
+where ordernumber is null
+
+
+select employeenumber, customernumber
+from customers
+right join employees
+on salesrepEmployeenumber = employeenumber
+order by salesrepEmployeenumber desc
+
+
+select concat(m.lastname, " ", m.firstname) "Manager",
+concat(e.lastname, " ", e.firstname) "Employee"
+from 
+employees e 
+inner join 
+employees m on
+m.employeenumber = e.reportsto
+order by Manager
+
+select e.*, d.* from employee e, departments data
+
+select lastname,firstname from employees
+where officecode in (
+					select officecode from offices 
+					where country = 'USA'
+					)
+
+select * from payments 
+where amount > (
+				select avg(amount) from payments)
+
+
+select customername from customers
+where customernumber not in (
+							select distinct customernumber
+							from orders)
+
+select max(items),
+min(items), floor(avg(items)) 
+from 
+	(select orderNumber,count(orderNumber)as items
+	from orderdetails group by ordernumber) as lineitems
+
+select productname, buyprice,productline
+from products p1
+where buyprice > (
+				select avg(buyprice) from products
+				where productline = p1.productline
+)
+order by productline
+
+
+select customername,customernumber from customers
+where exists
+(
+select ordernumber,sum(priceeach*quantityordered) total
+from orderdetails
+inner join orders using (orderNumber)
+where customernumber = customers.customernumber
+group by orderNumber
+having sum(priceeach*quantityordered) > 60000)
+
+select customername,sales,Customergroup from
+(select customernumber,
+round(sum(quantityordered*priceeach)) sales,
+(case 
+	when sum(quantityordered*priceeach) < 10000 then 'Silver'
+	when sum(quantityordered*priceeach) between 10000 and 100000 then 'Gold'
+	when sum(quantityordered*priceeach) > 100000 then 'Platinum'
+end) Customergroup
+from orderdetails inner join orders using (orderNumber)
+where year(shippeddate) = 2003
+group by customernumber limit 20) top20customers2003
+inner join customers using (customernumber)
+
+
+update employee
+set commission_pct = 15,
+salary = salary - 100
+where salary > 6000
+
+update employee
+set commission_pct = 25
+where department_id in (
+select department_id from departments where 
+department_name = 'IT')
+
+delete from tasks
+where start_date is null
+and due_date is null
+and priority = 2
+
+delete from tasks
+
+rollback
+
+truncate table tasks
+
+
+
+select concat(first_name," ",last_name) fullname from employee
+
+select upper(first_name),lower(first_name) from employee
+
+select replace(job_id,'IT_PROG','IT PROGRAMMER') from employee
+
+select left(job_id),right(job_id) from employee
+
+select first_name, length(first_name) from employee
+
+select reverse(first_name) from employee
+
+select productname, substr(productname,3,2) from 
+products limit 10
+
+select productname, substr(productname,-3,2) from 
+products limit 10
+
+select instr(productname,'Davidson') from products limit 10
+
+select format(12500.2065,2) -- 12,500.21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+order by ordernumber, orderlinenumber
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- Sorting
+Order By , Asc , Desc , Fields
+Limit
+Distinct
+- Filtering
+Where: 
+Comparison operators: = , <, > , <=, >=, !=
+Logical operators:  and, or, not
+other operators: in,not in, is null, is not  null
+like, not like, between
+
+-Aggregation(Grouping)
+count(*)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

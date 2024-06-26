@@ -11,7 +11,11 @@ export class RtfComponent {
        ngOnInit()
        {
         this.userform=new FormGroup({
-          fname:new FormControl("",[Validators.required,Validators.pattern("^[a-zA-Z ]{3,20}$")]) ,Pass:new FormControl("",[Validators.required,Validators.pattern("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$")])})
+          fname:new FormControl("",[Validators.required,Validators.pattern("^[a-zA-Z ]{3,20}$")]) ,
+          Pass:new FormControl("",[Validators.required,Validators.pattern("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$")]),
+          email:new FormControl("",[Validators.required,Validators.pattern("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")]),
+          term:new FormControl("",[Validators.required])
+        })
           
       
        }

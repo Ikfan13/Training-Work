@@ -12,6 +12,9 @@ import MyCssComp from './Components/MyCssComp';
 import ClickCounterComp from './Components/ClickCounterComp';
 import HoverCounterComp from './Components/HoverCounterComp';
 import { MySliderComp } from './Components/MySliderComp';
+import VirtualDomComp from './Components/VirtualDomComp';
+import LoginApp from './Components/LoginApp';
+import SignUp from './Components/SignUp';
 function App() {
   return (
     <div className="App">
@@ -29,7 +32,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <h2>Welcome to the world</h2>
+      
 
       {/* <FunctionComp myName="Mohamed Ikfan" post="Cheif Executive Officer"/>
       <ClassComp myName="Mohamed Ikfan" post="Cheif Executive Officer"/>
@@ -39,10 +42,13 @@ function App() {
        {/* <ConditionRenComp></ConditionRenComp>
        <MyImagesComp></MyImagesComp> */}
        {/* <ParentComp></ParentComp> */}
-       <MyCssComp></MyCssComp>
+       {/* <MyCssComp></MyCssComp>
        <ClickCounterComp></ClickCounterComp>
        <HoverCounterComp></HoverCounterComp>
        <MySliderComp></MySliderComp>
+       <VirtualDomComp></VirtualDomComp> */}
+       {/* <LoginApp></LoginApp> */}
+       <SignUp></SignUp>
     </div>
   );
 }
