@@ -1,0 +1,39 @@
+create table student(
+ StdId int primary key,
+ StdName Varchar(30) not null,
+ Sex Varchar(6) check(Sex in ('Male','Female')),
+ Percentage Decimal(4,2),
+ SClass Int,
+ Sec varchar(1),
+ Stream Varchar(10) check(Stream in ('Science','Commerce')),
+ DOB date);
+
+
+Insert Records:
+
+
+INSERT INTO Student VALUES (1001,'Akshara Agarwal','Female',70,11,'A','Science','1996-11-10'),
+(1002,'','Female',70,11,'A','Science','1996-11-10'),
+(1003,'','Female',70,11,'A','Science','1996-11-10'),
+(1004,'','Female',70,11,'A','Science','1996-11-10'),
+(1005,'','Female',70,11,'A','Science','1996-11-10'),
+(1006,'','Female',70,11,'A','Science','1996-11-10'),
+(1007,'','Female',70,11,'A','Science','1996-11-10'),
+(1008,'','Female',70,11,'A','Science','1996-11-10'),
+(1009,'','Female',70,11,'A','Science','1996-11-10'),
+(1010,'','Female',70,11,'A','Science','1996-11-10'),
+(1011,'','Female',70,11,'A','Science','1996-11-10'),
+(1012,'','Female',70,11,'A','Science','1996-11-10'),
+(1013,'','Female',70,11,'A','Science','1996-11-10'),
+(1014,'','Female',70,11,'A','Science','1996-11-10'),
+(1015,'','Female',70,11,'A','Science','1996-11-10'),
+(1016,'','Female',70,11,'A','Science','1996-11-10'),
+(1017,'','Female',70,11,'A','Science','1996-11-10'),
+(1018,'','Female',70,11,'A','Science','1996-11-10'),
+(1019,'','Female',70,11,'A','Science','1996-11-10'),
+(1020,'','Female',70,11,'A','Science','1996-11-10'),
+(1021,'','Female',70,11,'A','Science','1996-11-10'),
+(1022,'','Female',70,11,'A','Science','1996-11-10'),
+(1023,'','Female',70,11,'A','Science','1996-11-10'),
+(1024,'','Female',70,11,'A','Science','1996-11-10'),
+;

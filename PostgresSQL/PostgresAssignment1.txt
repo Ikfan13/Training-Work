@@ -1,0 +1,111 @@
+\i clubdata.sql
+create database university_db;
+
+\c university_db
+
+create table students(
+student_id serial primary Key,
+student_name varchar(255) not null,
+age int not null,email varchar(255) not null,
+frontend_mark int not null,
+backend_mark int not null, 
+status varchar(255)  default null
+);
+
+create table course
+(
+course_id serial primary key
+,course_name varchar(255) not null,
+ credits int not null
+);
+
+create table enrollment
+(
+enrollment_id serial primary key,
+student_id int references students(student_id),
+course_id int references course(course_id)
+);
+
+
+insert into students(student_name,age,email,frontend_mark,backend_mark) values ('Alice',22,'alice@example.com',55,57),
+('Bob',21,'bob@example.com',34,45),
+('Charlie',23,'charlie@example.com',60,59),
+('David',20,'david@example.com',40,49),
+('Eve',24,'eve@example.com',45,34),
+('Rahim',23,'rahim@example.com',46,42);
+
+insert into course(course_name,credits) values('Next,js',3),
+('React.js',4),
+('Database',3),
+('Prisma',3);
+
+insert into enrollment(student_id,course_id)values(1,1);
+(1,2),
+(2,1),
+(3,2);
+
+
+Query 1:
+
+insert into 
+students
+(student_name,age,email,frontend_mark,backend_mark)
+values 
+('Ikfan',23,'ikfan@example.com',87,98);
+
+
+
+
+Query 2:
+
+select
+ students.student_name
+ from students
+ inner join 
+ enrollment 
+ on enrollment.student_id=students.student_id 
+ inner join course 
+ on  enrollment.course_id=course.course_id 
+ where course.course_name='Next.js';
+ 
+ 
+Query 3:
+
+update students set status='Awarded' where
+ student_id = (
+ select student_id from 
+ (
+ select student_id,
+ frontend_mark+backend_mark as total_mark 
+ from students 
+ order by 
+ total_mark desc limit 1
+ )
+ );
+ 
+ 
+Query 4:
+
+delete from course where course_id not in (select course_id from enrollment);
+
+Query 5:
+
+select student_name from students limit 2 offset 2;
+
+Query 6:
+
+select 
+c.course_name,
+count(e.student_id) 
+from 
+course c inner join enrollment e 
+using (course_id) 
+group by c.course_name;
+
+Query 7:
+
+select round(avg(age)) as Average_age_of_all_students from students;
+
+Query 8:
+
+select student_name from students where email like '%example.com';

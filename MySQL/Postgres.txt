@@ -1,0 +1,73 @@
+DROP DATABASE dvdrental;
+
+CREATE DATABASE dvdrental;
+
+\l - list the database
+
+
+
+SELECT * FROM CUSTOMERS;
+
+SELECT FIRST_NAME FROM CUSTOMERS;
+
+SELECT FIRST_NAME ||' '|| LAST_NAME,EMAIL FROM CUSTOMER LIMIT 20;
+
+SELECT FIRST_NAME ||' '|| LAST_NAME "full name",EMAIL FROM CUSTOMER LIMIT 20;
+
+TO CLEAR SCREEN \! cls
+
+select first_name,last_name,email from customer order by first_name asc,last_name desc;
+
+
+select email,length(email) as lenemail from customer order by lenemail desc;
+
+
+create table sort_demo;
+
+insert into sort_demo values
+(1),
+(2),
+(3),
+(null);
+
+select distinct district from address;
+
+select * from address where district='Lima';
+
+
+Operators used with where clause
+= -> Equal
+> -> Greater than
+< -> Less than
+>= Greater than or equal
+<= Less than or equal
+<> or != Not equal
+And -> Logical And operator
+OR -> Logical Or operator
+IN -> reeturns true if a value matches any values in the list
+Between -> returns true if a value matches a pattern
+is Null -> returns true if value is null
+Not -> Negate the result of other operators
+
+
+
+select last_name,first_name from customer where first_name='Jamie' and last_name='Rice';
+
+
+select last_name,first_name from customer where first_name='Adam' or last_name='Rodriguez';
+
+
+select last_name,first_name from customer
+where first_name in ('Ann','Anne','Annie');
+
+
+select last_name,first_name from customer
+where first_name like 'Ann%';
+
+
+select last_name,first_name,length(first_name) from customer
+where first_name like 'A%'
+and length(first_name) between 3 and 5;
+
+select first_name,last_name from customer where
+first_name like 'Bra%' and last_name <> 'Motley';

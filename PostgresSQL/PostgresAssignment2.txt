@@ -1,0 +1,94 @@
+Basics:
+
+1.select * from cd.facilities;
+
+2.select name,membercost from cd.facilities;
+
+3.select * from cd.facilities where membercost <> 0;
+
+4.select 
+  facid,name,membercost,monthlymaintenance
+  from 
+  cd.facilities where membercost > 0 and 
+  (membercost < monthlymaintenance/50);
+
+5.select * from cd.facilities where name like '%Tennis%';
+
+6.select * from cd.facilities where facid in (1,5);
+
+7.select name,
+case 
+when monthlymaintenance > 100 then 'expensive'
+else 'cheap' end as cost from cd.facilities;
+
+8.select 
+memid,surname,firstname,joindate 
+from 
+cd.members 
+where 
+joindate > '2012-09-01';
+
+9.select distinct surname from cd.members order by surname limit 10;
+
+10.select surname from cd.members union select name from cd.facilities
+
+11.select joindate from cd.members order by joindate desc limit 1;
+   select max(joindate) from cd.members;
+
+12.select firstname,surname,joindate from cd.members where joindate=( select max(joindate) from cd.members);
+
+
+
+SUBQUERY AND JOINS:
+
+1.select b.starttime from cd.bookings b inner join cd.members m using (memid) where firstname='David' and surname='Farrell'; 
+
+2.select b.starttime,f.name from cd.bookings b inner join cd.facilities f using (facid) where f.name like 'Tennis%' and date(b.starttime)='2012-09-21' order by b.starttime;
+
+3.select distinct r.firstname as firstname, r.surname as surname
+	from 
+		cd.members m
+		inner join cd.members r
+			on r.memid = m.recommendedby
+order by surname, firstname; 
+
+4.select m.firstname as memfname,m.surname as mname,r.firstname as recfname,r.surname as rname from cd.members m left join cd.members r on r.memid=m.recommendedby order by m.surname,m.firstname;
+
+5.select distinct m.firstname ||' '|| m.surname as member ,
+f.name as facility 
+from cd.members m
+inner join cd.bookings b
+using(memid)  inner join cd.facilities f
+using(facid)  where f.name like 'Tennis Court%' order by member,facility;
+
+5.select m.firstname || ' ' || m.surname as member, 
+	facs.name as facility, 
+	case 
+		when m.memid = 0 then
+			b.slots*facs.guestcost
+		else
+			b.slots*facs.membercost
+	end as cost
+        from
+                cd.members m                
+                inner join cd.bookings b
+                        on m.memid = b.memid
+                inner join cd.facilities facs
+                        on b.facid = facs.facid
+ where
+date(b.starttime) = '2012-09-14' and (
+(m.memid = 0 and b.slots*facs.guestcost > 30) or
+(m.memid != 0 and b.slots*facs.membercost > 30)
+		)
+order by cost desc; 
+
+SUBQUERY:
+
+select distinct m.firstname || ' ' ||  m.surname as member,
+	(select r.firstname || ' ' || r.surname as recommender 
+		from cd.members r 
+		where r.memid = m.recommendedby
+	)
+	from 
+		cd.members m
+order by member; 
