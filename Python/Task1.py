@@ -39,11 +39,12 @@ def main():
  menu_card=veg_starter
  while(num==0):
     menu_card=tasks(menu_card)
+    print('Veg_starters are listed below : ')
     for starter in menu_card:
        print(starter)
     num=int(input("Enter 0 to Continue "))
  
-
+ 
     
 
  
