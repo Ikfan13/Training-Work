@@ -1,0 +1,6 @@
+Create a product class
+with function add product
+and display
+
+
+product_id autoincrement,product_name,price,description
