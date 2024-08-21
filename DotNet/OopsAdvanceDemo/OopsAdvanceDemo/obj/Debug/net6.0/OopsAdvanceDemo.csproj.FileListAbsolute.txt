@@ -1,0 +1,14 @@
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OopsAdvanceDemo\OopsAdvanceDemo\bin\Debug\net6.0\OopsAdvanceDemo.exe
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OopsAdvanceDemo\OopsAdvanceDemo\bin\Debug\net6.0\OopsAdvanceDemo.deps.json
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OopsAdvanceDemo\OopsAdvanceDemo\bin\Debug\net6.0\OopsAdvanceDemo.runtimeconfig.json
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OopsAdvanceDemo\OopsAdvanceDemo\bin\Debug\net6.0\OopsAdvanceDemo.dll
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OopsAdvanceDemo\OopsAdvanceDemo\bin\Debug\net6.0\OopsAdvanceDemo.pdb
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OopsAdvanceDemo\OopsAdvanceDemo\obj\Debug\net6.0\OopsAdvanceDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OopsAdvanceDemo\OopsAdvanceDemo\obj\Debug\net6.0\OopsAdvanceDemo.AssemblyInfoInputs.cache
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OopsAdvanceDemo\OopsAdvanceDemo\obj\Debug\net6.0\OopsAdvanceDemo.AssemblyInfo.cs
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OopsAdvanceDemo\OopsAdvanceDemo\obj\Debug\net6.0\OopsAdvanceDemo.csproj.CoreCompileInputs.cache
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OopsAdvanceDemo\OopsAdvanceDemo\obj\Debug\net6.0\OopsAdvanceDemo.dll
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OopsAdvanceDemo\OopsAdvanceDemo\obj\Debug\net6.0\refint\OopsAdvanceDemo.dll
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OopsAdvanceDemo\OopsAdvanceDemo\obj\Debug\net6.0\OopsAdvanceDemo.pdb
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OopsAdvanceDemo\OopsAdvanceDemo\obj\Debug\net6.0\OopsAdvanceDemo.genruntimeconfig.cache
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OopsAdvanceDemo\OopsAdvanceDemo\obj\Debug\net6.0\ref\OopsAdvanceDemo.dll

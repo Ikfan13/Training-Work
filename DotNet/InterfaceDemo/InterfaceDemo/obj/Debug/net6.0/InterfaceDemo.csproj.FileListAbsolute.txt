@@ -1,0 +1,14 @@
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\InterfaceDemo\InterfaceDemo\bin\Debug\net6.0\InterfaceDemo.exe
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\InterfaceDemo\InterfaceDemo\bin\Debug\net6.0\InterfaceDemo.deps.json
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\InterfaceDemo\InterfaceDemo\bin\Debug\net6.0\InterfaceDemo.runtimeconfig.json
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\InterfaceDemo\InterfaceDemo\bin\Debug\net6.0\InterfaceDemo.dll
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\InterfaceDemo\InterfaceDemo\bin\Debug\net6.0\InterfaceDemo.pdb
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\InterfaceDemo\InterfaceDemo\obj\Debug\net6.0\InterfaceDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\InterfaceDemo\InterfaceDemo\obj\Debug\net6.0\InterfaceDemo.AssemblyInfoInputs.cache
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\InterfaceDemo\InterfaceDemo\obj\Debug\net6.0\InterfaceDemo.AssemblyInfo.cs
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\InterfaceDemo\InterfaceDemo\obj\Debug\net6.0\InterfaceDemo.csproj.CoreCompileInputs.cache
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\InterfaceDemo\InterfaceDemo\obj\Debug\net6.0\InterfaceDemo.dll
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\InterfaceDemo\InterfaceDemo\obj\Debug\net6.0\refint\InterfaceDemo.dll
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\InterfaceDemo\InterfaceDemo\obj\Debug\net6.0\InterfaceDemo.pdb
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\InterfaceDemo\InterfaceDemo\obj\Debug\net6.0\InterfaceDemo.genruntimeconfig.cache
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\InterfaceDemo\InterfaceDemo\obj\Debug\net6.0\ref\InterfaceDemo.dll

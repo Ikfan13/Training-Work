@@ -1,0 +1,14 @@
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\LinqDemo\LinqDemo\bin\Debug\net6.0\LinqDemo.exe
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\LinqDemo\LinqDemo\bin\Debug\net6.0\LinqDemo.deps.json
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\LinqDemo\LinqDemo\bin\Debug\net6.0\LinqDemo.runtimeconfig.json
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\LinqDemo\LinqDemo\bin\Debug\net6.0\LinqDemo.dll
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\LinqDemo\LinqDemo\bin\Debug\net6.0\LinqDemo.pdb
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\LinqDemo\LinqDemo\obj\Debug\net6.0\LinqDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\LinqDemo\LinqDemo\obj\Debug\net6.0\LinqDemo.AssemblyInfoInputs.cache
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\LinqDemo\LinqDemo\obj\Debug\net6.0\LinqDemo.AssemblyInfo.cs
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\LinqDemo\LinqDemo\obj\Debug\net6.0\LinqDemo.csproj.CoreCompileInputs.cache
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\LinqDemo\LinqDemo\obj\Debug\net6.0\LinqDemo.dll
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\LinqDemo\LinqDemo\obj\Debug\net6.0\refint\LinqDemo.dll
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\LinqDemo\LinqDemo\obj\Debug\net6.0\LinqDemo.pdb
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\LinqDemo\LinqDemo\obj\Debug\net6.0\LinqDemo.genruntimeconfig.cache
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\LinqDemo\LinqDemo\obj\Debug\net6.0\ref\LinqDemo.dll

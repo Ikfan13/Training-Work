@@ -1,0 +1,14 @@
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\IProductDemo\IProductDemo\bin\Debug\net6.0\IProductDemo.exe
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\IProductDemo\IProductDemo\bin\Debug\net6.0\IProductDemo.deps.json
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\IProductDemo\IProductDemo\bin\Debug\net6.0\IProductDemo.runtimeconfig.json
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\IProductDemo\IProductDemo\bin\Debug\net6.0\IProductDemo.dll
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\IProductDemo\IProductDemo\bin\Debug\net6.0\IProductDemo.pdb
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\IProductDemo\IProductDemo\obj\Debug\net6.0\IProductDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\IProductDemo\IProductDemo\obj\Debug\net6.0\IProductDemo.AssemblyInfoInputs.cache
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\IProductDemo\IProductDemo\obj\Debug\net6.0\IProductDemo.AssemblyInfo.cs
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\IProductDemo\IProductDemo\obj\Debug\net6.0\IProductDemo.csproj.CoreCompileInputs.cache
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\IProductDemo\IProductDemo\obj\Debug\net6.0\IProductDemo.dll
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\IProductDemo\IProductDemo\obj\Debug\net6.0\refint\IProductDemo.dll
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\IProductDemo\IProductDemo\obj\Debug\net6.0\IProductDemo.pdb
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\IProductDemo\IProductDemo\obj\Debug\net6.0\IProductDemo.genruntimeconfig.cache
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\IProductDemo\IProductDemo\obj\Debug\net6.0\ref\IProductDemo.dll

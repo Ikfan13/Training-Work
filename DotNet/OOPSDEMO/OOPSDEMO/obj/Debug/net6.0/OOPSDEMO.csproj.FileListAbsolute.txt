@@ -1,0 +1,14 @@
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OOPSDEMO\OOPSDEMO\bin\Debug\net6.0\OOPSDEMO.exe
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OOPSDEMO\OOPSDEMO\bin\Debug\net6.0\OOPSDEMO.deps.json
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OOPSDEMO\OOPSDEMO\bin\Debug\net6.0\OOPSDEMO.runtimeconfig.json
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OOPSDEMO\OOPSDEMO\bin\Debug\net6.0\OOPSDEMO.dll
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OOPSDEMO\OOPSDEMO\bin\Debug\net6.0\OOPSDEMO.pdb
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OOPSDEMO\OOPSDEMO\obj\Debug\net6.0\OOPSDEMO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OOPSDEMO\OOPSDEMO\obj\Debug\net6.0\OOPSDEMO.AssemblyInfoInputs.cache
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OOPSDEMO\OOPSDEMO\obj\Debug\net6.0\OOPSDEMO.AssemblyInfo.cs
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OOPSDEMO\OOPSDEMO\obj\Debug\net6.0\OOPSDEMO.csproj.CoreCompileInputs.cache
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OOPSDEMO\OOPSDEMO\obj\Debug\net6.0\OOPSDEMO.dll
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OOPSDEMO\OOPSDEMO\obj\Debug\net6.0\refint\OOPSDEMO.dll
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OOPSDEMO\OOPSDEMO\obj\Debug\net6.0\OOPSDEMO.pdb
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OOPSDEMO\OOPSDEMO\obj\Debug\net6.0\OOPSDEMO.genruntimeconfig.cache
+C:\Users\mohamedikfan.m\Documents\MOHAMED IKFAN\Training-Work\DotNet\OOPSDEMO\OOPSDEMO\obj\Debug\net6.0\ref\OOPSDEMO.dll
